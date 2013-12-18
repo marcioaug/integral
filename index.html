@@ -1,1 +1,22 @@
-Integral
+---
+layout: default
+title: Integral
+---
+
+<ul class="nav nav-tabs">
+    <li><a href="#duplas" data-toggle="tab">Duplas</a></li>
+    <li><a href="#polares" data-toggle="tab">Polares</a></li>
+    <li><a href="#triplas" data-toggle="tab">Triiplas</a></li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade in active" id="duplas">
+        {% include duplas.html %}
+    </div>
+    <div class="tab-pane fade" id="polares">
+        {% include polares.html %}
+    </div>
+    <div class="tab-pane fade" id="triplas">
+        {% include triplas.html %}
+    </div>
+</div>
