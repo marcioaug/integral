@@ -1,5 +1,16 @@
+
+
 (function ($) {
     'use strict';
+
+    window.carregarDupla = function (f, xn, xm, yn, ym, tipo) {
+        $('#f').val(f);
+        $('#xn').val(xn);
+        $('#xm').val(xm);
+        $('#yn').val(yn);
+        $('#ym').val(ym);
+        $('#tipo').val(tipo);
+    };
 
     $(function () {
 

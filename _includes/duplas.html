@@ -31,3 +31,42 @@
 <span id="n-value">20</span>
 
 <button id="calculate" class="btn btn-success">Calcular</button>
+<br/>
+<br/>
+<br/>
+<h2>Exemplos</h2>
+    <br/>
+<table class="table table-striped" style="font-family: serif;">
+    <tr>
+        <td style="font-size: 1.5em">∫∫ (16 - x^2 - 2y^2) dydx</td>
+        <td><button class="btn btn-primary" onclick="carregarDupla('16 - x^2 - 2*y^2', '0', '2', '0', '2', 1)">Carregar...</button></td>
+    </tr>
+    <tr>
+        <td style="font-size: 1.5em">∫∫ (sqrt(1 - x^2)) dydx</td>
+        <td><button class="btn btn-primary" onclick="carregarDupla('sqrt(1 - x^2)', '-1', '1', '-2', '2', 1)">Carregar...</button></td>
+    </tr>
+    <tr>
+        <td style="font-size: 1.5em">∫∫ (x - 3*y^2) dydx</td>
+        <td><button class="btn btn-primary" onclick="carregarDupla('x - 3*y^2', '0', '2', '1', '2', 1)">Carregar...</button></td>
+    </tr>
+    <tr>
+        <td style="font-size: 1.5em">∫∫ ((x^2)*y) dydx</td>
+        <td><button class="btn btn-primary" onclick="carregarDupla('(x^2)*y', '0', '3', '1', '2', 1)">Carregar...</button></td>
+    </tr>
+    <tr>
+        <td style="font-size: 1.5em">∫∫ ((x^2)*y) dxdy</td>
+        <td><button class="btn btn-primary" onclick="carregarDupla('(x^2)*y', '1', '2', '0', '3', 2)">Carregar...</button></td>
+    </tr>
+    <tr>
+        <td style="font-size: 1.5em">∫∫ (x - 3*y^2) dydx</td>
+        <td><button class="btn btn-primary" onclick="carregarDupla('x - 3*y^2', '0', '2', '1', '2', 1)">Carregar...</button></td>
+    </tr>
+    <tr>
+        <td style="font-size: 1.5em">∫∫ (y*sin(x*y)) dxdy</td>
+        <td><button class="btn btn-primary" onclick="carregarDupla('y*sin(x*y)', '0', 'pi', '1', '2', 2)">Carregar...</button></td>
+    </tr>
+    <tr>
+        <td style="font-size: 1.5em">∫∫ (x + 2*y) dydx</td>
+        <td><button class="btn btn-primary" onclick="carregarDupla('x + 2*y', '-1', '1', '2*x^2', '1+x^2', 1)">Carregar...</button></td>
+    </tr>
+</table>
