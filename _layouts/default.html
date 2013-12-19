@@ -18,6 +18,9 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/math-0.17.0.min.js"></script>
         <script type="text/javascript" src="js/integral.js"></script>
+        <script type="text/javascript" src="js/types.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
+
 
         <script type="text/javascript">
             var _gaq = _gaq || [];
@@ -29,6 +32,88 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
+
+        <style>
+            .limites {
+                float: left;
+                width: 35px;
+                position: relative;
+                font-size: 24px;
+                border: 1px solid #aaa;
+            }
+
+            .limite-inferior {
+                top: 40px;
+                left: -9px;
+            }
+
+            .limite-superior {
+                top: -119px;
+                left: -13px;
+            }
+
+            .integral {
+                font-size: 200px;
+            }
+
+            .equacao-parte {
+                display: table-cell;;
+            }
+
+            .limite-m {
+                width: 120px;
+            }
+
+            .limite-mm {
+                left: -98px;
+            }
+
+            .funcao {
+                border: 1px solid #aaa;
+                position: relative;
+                left: -219px;
+                top: -43px;
+                font-size: 37px;
+                width: 237px;
+            }
+
+            .tipo {
+                font-size: 45PX;
+                position: relative;
+                top: -40PX;
+                left: -211px;
+            }
+
+            .resultado-dupla {
+                font-size: 40px;
+                position: relative;
+                top: -45px;
+                left: -190px;
+            }
+
+            .tripla {
+                position: relative;
+                left: -97px;
+            }
+
+            .limite-hn {
+                left: -105px;
+                width: 200px;
+            }
+
+            .limite-hm {
+                left: -274px;
+                width: 200px;
+            }
+
+            .tipo-t {
+                left: -467px;
+            }
+
+            .funcao-t {
+                left: -475px;
+            }
+        </style>
     </head>
     <body>
         {{ content }}

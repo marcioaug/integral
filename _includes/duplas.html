@@ -1,21 +1,33 @@
-<div style="text-align: center;">
-    <span style="font-size: 200px">∫</span>
-    <span style="font-size: 200px">∫</span>
-    <div style="position: relative; display: inline; top: -15px;">
-        <span>
-            <input id="f" type="text" style="font-size: 70px; border: 1px solid grey; width: 440px; padding: 9px 5px;"/>
-        </span>
-        <span style="font-size: 70px; font-style: italic;">dxdy<span id="result"></span></span>
-    </div>
+<table style="font-family: serif; margin: 50px 20px;">
+    <tr>
+        <td rowspan="3"><span style="font-size: 15em; margin: 0; padding: 0 13px; line-height: 62px; font-family: serif;">∫</span></td>
+        <td><input id="xm" type="text" style="width: 60px; border: 1px solid #ddd; font-size: 1.73em;"/></td>
+        <td rowspan="3"><span style="font-size: 15em; margin: 0; padding: 0 13px; line-height: 62px; font-family: serif;">∫</span></td>
+        <td><input id="ym" type="text" style="width: 120px; border: 1px solid #ddd; font-size: 1.73em" /></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td style="height: 155px;"><input id="f" type="text" style="width: 400px; border: 1px solid #ddd; font-size: 4em" /></td>
+        <td>
+            <select id="tipo" type="text" style="border: 1px solid #ddd; font-size: 4em" />
+                <option value="1">dydx</option>
+                <option value="2">dxdy</option>
+                <option value="3">rdrdθ</option>
+            </select>
+        </td>
+        <td><span id="result" style="font-size: 4em"></span></td>
+    </tr>
+    <tr>
+        <td><input id="xn" type="text" style="width: 60px; border: 1px solid #ddd; font-size: 1.73em; margin-left: -32px;" /></td>
+        <td><input id="yn" type="text" style="width: 120px; border: 1px solid #ddd; font-size: 1.73em; margin-left: -32px;" /></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 
-</div>
-
-<input id="xn" type="text" />
-<input id="xm" type="text" />
-<input id="yn" type="text" />
-<input id="ym" type="text" />
 <input id="n" type="range" min="1" max="100" step="1" value="20" />
 <span id="n-value">20</span>
 
 <button id="calculate" class="btn btn-success">Calcular</button>
-

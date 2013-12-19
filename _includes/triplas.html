@@ -1,9 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+<table style="font-family: serif; margin: 50px 20px;">
+    <tr>
+        <td rowspan="3"><span style="font-size: 15em; margin: 0; padding: 0 13px; line-height: 62px; font-family: serif;">∫</span></td>
+        <td><input id="xm-t" type="text" style="width: 60px; border: 1px solid #ddd; font-size: 1.73em;"/></td>
+        <td rowspan="3"><span style="font-size: 15em; margin: 0; padding: 0 13px; line-height: 62px; font-family: serif;">∫</span></td>
+        <td><input id="ym-t" type="text" style="width: 120px; border: 1px solid #ddd; font-size: 1.73em" /></td>
+        <td rowspan="3"><span style="font-size: 15em; margin: 0; padding: 0 13px; line-height: 62px; font-family: serif;">∫</span></td>
+        <td><input id="zm-t" type="text" style="width: 200px; border: 1px solid #ddd; font-size: 1.73em" /></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td style="height: 155px;"><input id="f-t" type="text" style="width: 400px; border: 1px solid #ddd; font-size: 4em" /></td>
+        <td>
+            <select id="tipo-t" type="text" style="border: 1px solid #ddd; font-size: 4em" />
+            <option value="1">dzdydx</option>
+            <option value="2">dzdxdy</option>
+            <option value="3">dxdydz</option>
+            <option value="4">dxdzdy</option>
+            <option value="5">dydzdx</option>
+            <option value="6">dydxdz</option>
+            </select>
+        </td>
+        <td><span id="result-t" style="font-size: 4em"></span></td>
+    </tr>
+    <tr>
+        <td><input id="xn-t" type="text" style="width: 60px; border: 1px solid #ddd; font-size: 1.73em; margin-left: -32px;" /></td>
+        <td><input id="yn-t" type="text" style="width: 120px; border: 1px solid #ddd; font-size: 1.73em; margin-left: -32px;" /></td>
+        <td><input id="zn-t" type="text" style="width: 200px; border: 1px solid #ddd; font-size: 1.73em; margin-left: -32px;" /></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
 
-</body>
-</html>
+
+
+<input id="n-t" type="range" min="1" max="100" step="1" value="20" />
+<span id="n-value-t">20</span>
+
+<button id="calculate-t" class="btn btn-success">Calcular</button>
